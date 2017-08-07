@@ -6,37 +6,37 @@
 
   <div id="main" <?php bzb_layout_main(); ?> role="main" itemprop="mainContentOfPage" itemscope="itemscope" itemtype="http://schema.org/Blog">
     <div class="main-inner">
-    
-    
+
+
     <?php if( !is_front_page()){?>
           <h1 class="post-title" ><?php bzb_title(); ?></h1>
     <?php } ?>
-    
+
     <div class="post-loop-wrap">
     <?php
-      
+
 			if ( have_posts() ) :
 
 				while ( have_posts() ) : the_post();
 
         $cf = get_post_meta($post->ID); ?>
     <article id="post-<?php echo the_ID(); ?>" <?php post_class(); ?> itemscope="itemscope" itemtype="http://schema.org/BlogPosting">
-      
-      
-      
+
+
+
 
       <header class="post-header">
         <div class="cat-name">
           <span>
             <?php
-              $category = get_the_category(); 
+              $category = get_the_category();
               echo $category[0]->cat_name;
             ?>
           </span>
         </div>
         <h2 class="post-title" itemprop="headline"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
       </header>
-      
+
       <div class="post-meta-area">
         <ul class="post-meta list-inline">
           <li class="date" itemprop="datePublished" datetime="<?php the_time('c');?>"><i class="fa fa-clock-o"></i> <?php the_time('Y.m.d');?></li>
@@ -50,7 +50,7 @@
           </li>
         </ul>
       </div>
-      
+
       <?php if( get_the_post_thumbnail() ) { ?>
       <div class="post-thumbnail">
         <a href="<?php the_permalink(); ?>" rel="nofollow"><?php the_post_thumbnail('big_thumbnail'); ?></a>
@@ -60,7 +60,7 @@
       <section class="post-content" itemprop="text">
         <?php the_excerpt(); ?>
       </section>
-      
+
       <footer class="post-footer">
         <a class="morelink" href="<?php the_permalink(); ?>" rel="nofollow">続きを読む ≫</a>
       </footer>
@@ -68,7 +68,7 @@
     </article>
 
     <?php
-    
+
 				endwhile;
 
 			else :
@@ -93,13 +93,11 @@
 
     </div><!-- /main-inner -->
   </div><!-- /main -->
-  
+
 <?php get_sidebar(); ?>
 
 </div><!-- /wrap -->
-  
+
 </div><!-- /content -->
 
 <?php get_footer(); ?>
-
-
