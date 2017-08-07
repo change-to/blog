@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - WordPress Popular Posts - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2017-06-01 13:28:01+0000\n"
+"PO-Revision-Date: 2017-07-05 02:36:06+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -38,10 +38,6 @@ msgstr "WordPress Popular Posts"
 #: wordpress-popular-posts.php:2443
 msgid "under %s"
 msgstr "%s の下"
-
-#: wordpress-popular-posts.php:2435
-msgid "posted on %s"
-msgstr "%s に投稿された"
 
 #: wordpress-popular-posts.php:2429
 msgid "by %s"
@@ -317,7 +313,7 @@ msgstr "サポート、質問、フィードバックがあれば<a href=\"%s\" 
 
 #: views/admin.php:793
 msgid "Need help?"
-msgstr "お困りですか?"
+msgstr "お困りですか ?"
 
 #: views/admin.php:787
 msgid "You can <a href=\"%s\" target=\"_blank\">leave a review</a>, too!"
