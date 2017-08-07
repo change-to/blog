@@ -62,10 +62,10 @@
         </figure>
       <?php } // get_the_post_thumbnail ?>
         <div class="detail-post">
-          <!-- <p class="p_category"><?php $cat = get_the_category(); $cat = $cat[0]; {
-              echo $cat->cat_name;
-            } ?></p> -->
           <h3><?php the_title(); ?></h3>
+          <p class="p_category"><?php $cat = get_the_category(); $cat = $cat[0]; {
+              echo $cat->cat_name;
+            } ?></p>
           <p class="p_rank">NO.<span><?php echo $i; ?></span></p>
         </div>
       </div>
@@ -123,13 +123,19 @@
         <?php the_post_thumbnail('loop_thumbnail'); ?>
         </div>
         <?php } else{ ?>
-          <img src="<?php echo get_template_directory_uri(); ?>/lib/images/noimage.jpg" alt="noimage" width="800" height="533" />
+          <div class="about-post">
+            <figure class="eyecatch">
+              <img src="<?php echo get_template_directory_uri(); ?>/lib/images/noimage.jpg" alt="noimage" width="800" height="533" />
+            </figure>
         <?php } // get_the_post_thumbnail ?>
-            <p class="p_category"><?php $cat = get_the_category(); $cat = $cat[0]; {
+        <div class="detail-post">
+          <h3><?php the_title(); ?></h3>
+          <p class="p_category"><?php $cat = get_the_category(); $cat = $cat[0]; {
           echo $cat->cat_name;
         } ?></p>
-            <h3><?php the_title(); ?></h3>
-            <p class="p_date"><span class="date-y"><?php the_time('Y'); ?></span><span class="date-mj"><?php the_time('m/j'); ?></span></p></a>
+          <p class="p_date"><span class="date-y"><?php the_time('Y'); ?></span><span class="date-mj"><?php the_time('m/j'); ?></span></p></a>
+        </div>
+      </div>
   </article>
 
 <?php
