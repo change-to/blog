@@ -50,13 +50,12 @@
 
   <article id="post-<?php echo the_ID(); ?>" <?php post_class($rank_class); ?>>
     <a href="<?php the_permalink(); ?>" class="wrap-a">
-
+      <div class="about-post">
       <?php if( get_the_post_thumbnail() ) { ?>
       <div class="post-thumbnail">
         <?php the_post_thumbnail('loop_thumbnail'); ?>
       </div>
       <?php } else{ ?>
-      <div class="about-post">
         <figure class="eyecatch">
             <img src="<?php echo get_template_directory_uri(); ?>/lib/images/noimage.jpg" alt="noimage" width="800" height="533" />
         </figure>
@@ -118,12 +117,13 @@
 ?>
 
   <article id="post-<?php echo the_ID(); ?>" <?php post_class($recent_class); ?>>
-      <a href="<?php the_permalink(); ?>" class="wrap-a"><?php if( get_the_post_thumbnail() ) { ?>
+      <a href="<?php the_permalink(); ?>" class="wrap-a">
+        <div class="about-post">
+        <?php if( get_the_post_thumbnail() ) { ?>
         <div class="post-thumbnail">
         <?php the_post_thumbnail('loop_thumbnail'); ?>
         </div>
         <?php } else{ ?>
-          <div class="about-post">
             <figure class="eyecatch">
               <img src="<?php echo get_template_directory_uri(); ?>/lib/images/noimage.jpg" alt="noimage" width="800" height="533" />
             </figure>
