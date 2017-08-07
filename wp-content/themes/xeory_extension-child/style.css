@@ -17,6 +17,10 @@ body.home .front-loop .popular_post_box h3 {
   width: 240px;
   height: 161px;
 }
+.post-thumbnail{
+  width: 240px;
+  height: 161px;
+}
 .p_category{
   height: 30px;
 }
