@@ -4,8 +4,8 @@
 	<meta charset="UTF-8">
 	<title><?php bzb_title(); ?></title>
 	<meta name="viewport" content="width=device-width,initial-scale=1.0">
-
-<?php 
+	<meta name="google-site-verification" content="wwgpOtNForu_RfoqUui_yRFk-UDKyoMOyx_gopNho94" />
+<?php
 wp_head();
 ?>
 
@@ -61,11 +61,11 @@ wp_head();
     <<?php echo $logo_wrap; ?> id="logo" itemprop="headline">
       <a href="<?php echo home_url(); ?>"><?php echo $logo_inner; ?></a><br />
     </<?php echo $logo_wrap; ?>>    <!-- start global nav  -->
-    
+
     <div id="header-right" class="clearfix">
-      
+
     <?php if( has_nav_menu( 'footer_nav' ) ){ ?>
-    
+
     <div id="header-fnav-area">
       <p id="header-fnav-btn"><a href="#"><?php echo get_option('footer_menu_title'); ?><br /><i class="fa fa-angle-down"></i></a></p>
       <nav id="header-fnav" role="navigation" itemscope="itemscope" itemtype="http://scheme.org/SiteNavigationElement">
@@ -79,12 +79,12 @@ wp_head();
             'container_id'    => 'fnav-h-container',
             'container_class' => 'fnav-h-container'
           )
-        );?>  
+        );?>
       </nav>
     </div>
-    
+
     <?php } // if footer_nav ?>
-    
+
     <?php if( has_nav_menu( 'global_nav' ) ){ ?>
     <div id="header-gnav-area">
       <nav id="gnav" role="navigation" itemscope="itemscope" itemtype="http://scheme.org/SiteNavigationElement">
@@ -98,20 +98,20 @@ wp_head();
             'container_id'    => 'gnav-container',
             'container_class' => 'gnav-container'
           )
-        );?>  
+        );?>
       </nav>
     </div>
     <?php } ?>
-    
+
     </div><!-- /header-right -->
-    
+
     <?php if( has_nav_menu('global_nav') || has_nav_menu('footer_nav') ){ ?>
-      
+
 
       <div id="header-nav-btn">
         <a href="#"><i class="fa fa-align-justify"></i></a>
       </div>
-      
+
     <?php } ?>
   </div>
 </header>
@@ -120,11 +120,11 @@ wp_head();
 
   <nav id="gnav-sp">
     <div class="wrap">
-    
+
     <div class="grid-wrap">
             <div id="header-cont-about" class="grid-3">
-          <?php if( has_nav_menu( 'footer_nav' ) ){ 
-          
+          <?php if( has_nav_menu( 'footer_nav' ) ){
+
             wp_nav_menu(
               array(
                 'theme_location'  => 'footer_nav',
@@ -134,7 +134,7 @@ wp_head();
                 'items_wrap'      => '<ul id="footer-nav" class="%2$s">%3$s</ul>'
               )
             );
-          } //if footer_nav 
+          } //if footer_nav
           ?>
         </div>
         <div id="header-cont-content" class="grid-6">
@@ -151,22 +151,19 @@ wp_head();
           )
         );?>
         </div>
-        
+
     </div>
-    
+
     </div>
   </nav>
 
 
 <?php if( !(is_home() || is_front_page() || is_singular('lp') ) ){ ?>
-  
+
   <div class="breadcrumb-area">
     <div class="wrap">
       <?php bzb_breadcrumb(); ?>
     </div>
   </div>
-    
+
 <?php } ?>
-
-
-
