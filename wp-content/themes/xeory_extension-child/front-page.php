@@ -38,7 +38,7 @@
               ),
              'relation'=>'OR'
           ),
-            'showposts'=>5,
+            'showposts'=>3,
             'meta_key'=>'views',
             'orderby'=>'meta_value_num',
             'order'=>'DESC'
@@ -107,7 +107,7 @@
               ),
              'relation'=>'OR'
           ),
-            'showposts'=>5,
+            'showposts'=>10,
             'order'=>'DESC'
           );
 
