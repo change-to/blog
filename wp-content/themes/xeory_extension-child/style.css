@@ -68,3 +68,8 @@ body.home .front-loop .popular_post_box {
 #gnav {
   background-color: white;
 }
+
+/* Fixed */
+#header.fixed {
+   position: fixed;
+}
