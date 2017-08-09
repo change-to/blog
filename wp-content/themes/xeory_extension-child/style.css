@@ -50,3 +50,17 @@ body.home .front-loop .popular_post_box {
 #header #logo {
   padding: 15px 0 0 0;
 }
+
+#header {
+    background: white;
+    border-bottom: 3px solid #F3F3F3;
+}
+
+#header a {
+    color: black;
+}
+
+#gnav ul li a {
+    color: black;
+    background: white;
+}
