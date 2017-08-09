@@ -68,7 +68,10 @@ body.home .front-loop .popular_post_box {
 #gnav {
   background-color: white;
 }
-
+#gnav ul li a:hover {
+    color: black;
+    background: #F3F3F3;
+}
 /* Fixed */
 #header.fixed {
    position: fixed;
