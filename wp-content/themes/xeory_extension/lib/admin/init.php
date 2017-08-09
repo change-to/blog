@@ -238,7 +238,6 @@ jQuery('document').ready(function(){
           1 => 'color01',
           2 => 'color02',
           3 => 'color03',
-          4 => 'color04',
         );
 
         $color_scheme = trim(get_option('color_scheme'));
@@ -275,7 +274,6 @@ jQuery('document').ready(function(){
     <input type="radio" name="color_scheme" id="color_scheme5" value="color04" <?php echo ($color_scheme == $colors[4]) ? 'checked' : '';?> />
     <label for="color_scheme5">赤</label>
     </li>
-
     </ul>
 
 
