@@ -101,3 +101,6 @@ body.home #front-service .front-service-inner .c_text .c_btn a {
 body.home #front-service .front-service-inner .c_text .c_btn a {
     text-shadow: none;
 }
+#gnav ul li.current-menu-item a {
+    background: white;
+}
