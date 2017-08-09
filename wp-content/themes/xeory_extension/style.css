@@ -84,7 +84,7 @@ Version: 0.2.1
 
 /* ----------------------------------------
 * レスポンシブ
-* ~ / 1200px / 991px / 767px 
+* ~ / 1200px / 991px / 767px
 * desctop / laptop / tablet / phone
 ---------------------------------------- */
 @media screen and (max-width: 1200px) {
@@ -202,7 +202,6 @@ form button:hover {
 }
 
 #header {
- position: fixed;
  left: 0;
  right: 0;
  z-index: 999;
@@ -424,11 +423,11 @@ body.home #main_visual {
   text-align: center;
   */
   /*ヘッダー画像設定*/
-  background-image: URL(http://change-to.com/wp-content/uploads/2017/07/header.png);
+  /*background-image: URL(http://change-to.com/wp-content/uploads/2017/07/header.png);
   background-size: cover;
   height: 530px !important;
   color: #000;
-  text-align: center;
+  text-align: center;*/
 }
 body.home #main_visual h2 {
   font-size: 48px;

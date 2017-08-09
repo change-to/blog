@@ -50,3 +50,54 @@ body.home .front-loop .popular_post_box {
 #header #logo {
   padding: 15px 0 0 0;
 }
+
+#header {
+  position: fixed;
+  background: white;
+  border-top: 10px solid black;
+  border-bottom: 3px solid #F3F3F3;
+}
+
+#header a {
+    color: black;
+}
+
+#gnav ul li a {
+    color: black;
+    background: white;
+}
+
+#gnav {
+  background-color: white;
+}
+#gnav ul li a:hover {
+    color: black;
+    background: #F3F3F3;
+}
+/* Fixed */
+#header.fixed {
+   position: fixed;
+}
+#main_visual{
+  height: 100% !important;
+}
+
+body.home .front-loop {
+    margin-bottom: 0px;
+}
+
+body.home .front-loop .popular_post_box .p_category {
+    background: #F3F3F3;
+    color: black;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+}
+
+body.home #front-service .front-service-inner .c_text .c_btn a {
+    background: #F3F3F3;
+    color: black;
+}
+body.home #front-service .front-service-inner .c_text .c_btn a {
+    text-shadow: none;
+}

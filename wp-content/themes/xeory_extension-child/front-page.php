@@ -1,7 +1,11 @@
 <?php get_header(); ?>
 
 <div id="main_visual">
-  <div class="wrap">
+  <div id="main_background">
+    <img src="http://change-to.com/wp-content/uploads/2017/08/changes.png" class="main_background_image"/>
+  </div>
+  </div>
+  <!-- <div class="wrap">
     <h2><?php echo nl2br(get_option('top_catchcopy'));?></h2>
     <p><?php echo nl2br(get_option('top_description'));?></p>
   </div><!-- .wrap -->
