@@ -52,8 +52,9 @@ body.home .front-loop .popular_post_box {
 }
 
 #header {
-    background: white;
-    border-bottom: 3px solid #F3F3F3;
+  position: fixed;
+  background: white;
+  border-bottom: 3px solid #F3F3F3;
 }
 
 #header a {
@@ -75,4 +76,7 @@ body.home .front-loop .popular_post_box {
 /* Fixed */
 #header.fixed {
    position: fixed;
+}
+#main_visual{
+  height: 100% !important;
 }

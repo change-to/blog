@@ -423,11 +423,11 @@ body.home #main_visual {
   text-align: center;
   */
   /*ヘッダー画像設定*/
-  background-image: URL(http://change-to.com/wp-content/uploads/2017/07/header.png);
+  /*background-image: URL(http://change-to.com/wp-content/uploads/2017/07/header.png);
   background-size: cover;
   height: 530px !important;
   color: #000;
-  text-align: center;
+  text-align: center;*/
 }
 body.home #main_visual h2 {
   font-size: 48px;
