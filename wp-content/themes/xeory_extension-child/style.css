@@ -54,6 +54,7 @@ body.home .front-loop .popular_post_box {
 #header {
   position: fixed;
   background: white;
+  border-top: 10px solid black;
   border-bottom: 3px solid #F3F3F3;
 }
 
@@ -79,4 +80,24 @@ body.home .front-loop .popular_post_box {
 }
 #main_visual{
   height: 100% !important;
+}
+
+body.home .front-loop {
+    margin-bottom: 0px;
+}
+
+body.home .front-loop .popular_post_box .p_category {
+    background: #F3F3F3;
+    color: black;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+}
+
+body.home #front-service .front-service-inner .c_text .c_btn a {
+    background: #F3F3F3;
+    color: black;
+}
+body.home #front-service .front-service-inner .c_text .c_btn a {
+    text-shadow: none;
 }
