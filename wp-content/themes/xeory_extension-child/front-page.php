@@ -56,9 +56,9 @@
     <a href="<?php the_permalink(); ?>" class="wrap-a">
       <div class="about-post">
       <?php if( get_the_post_thumbnail() ) { ?>
-      <div class="post-thumbnail">
-        <?php the_post_thumbnail('loop_thumbnail'); ?>
-      </div>
+        <figure class="eyecatch">
+          <?php the_post_thumbnail('loop_thumbnail'); ?>
+        </figure>
       <?php } else{ ?>
         <figure class="eyecatch">
             <img src="<?php echo get_template_directory_uri(); ?>/lib/images/noimage.jpg" alt="noimage" width="800" height="533" />
@@ -121,25 +121,26 @@
 ?>
 
   <article id="post-<?php echo the_ID(); ?>" <?php post_class($recent_class); ?>>
-      <a href="<?php the_permalink(); ?>" class="wrap-a">
-        <div class="about-post">
-        <?php if( get_the_post_thumbnail() ) { ?>
-        <div class="post-thumbnail">
-        <?php the_post_thumbnail('loop_thumbnail'); ?>
-        </div>
-        <?php } else{ ?>
-            <figure class="eyecatch">
-              <img src="<?php echo get_template_directory_uri(); ?>/lib/images/noimage.jpg" alt="noimage" width="800" height="533" />
-            </figure>
-        <?php } // get_the_post_thumbnail ?>
-        <div class="detail-post">
-          <h3><?php the_title(); ?></h3>
-          <p class="p_category"><?php $cat = get_the_category(); $cat = $cat[0]; {
-          echo $cat->cat_name;
-        } ?></p>
-          <p class="p_date"><span class="date-y"><?php the_time('Y'); ?></span><span class="date-mj"><?php the_time('m/j'); ?></span></p></a>
-        </div>
+    <a href="<?php the_permalink(); ?>" class="wrap-a">
+      <div class="about-post">
+      <?php if( get_the_post_thumbnail() ) { ?>
+        <figure class="eyecatch">
+          <?php the_post_thumbnail('loop_thumbnail'); ?>
+        </figure>
+      <?php } else{ ?>
+          <figure class="eyecatch">
+            <img src="<?php echo get_template_directory_uri(); ?>/lib/images/noimage.jpg" alt="noimage" width="800" height="533" />
+          </figure>
+      <?php } // get_the_post_thumbnail ?>
+      <div class="detail-post">
+        <h3><?php the_title(); ?></h3>
+        <p class="p_category"><?php $cat = get_the_category(); $cat = $cat[0]; {
+        echo $cat->cat_name;
+      } ?></p>
+        <p class="p_date"><span class="date-y"><?php the_time('Y'); ?></span><span class="date-mj"><?php the_time('m/j'); ?></span></p>
       </div>
+    </div>
+    </a>
   </article>
 
 <?php
