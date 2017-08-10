@@ -17,10 +17,7 @@ body.home .front-loop .popular_post_box h3 {
   width: 240px;
   height: 161px;
 }
-.about-post .post-thumbnail{
-  width: 240px;
-  height: 161px;
-}
+
 .p_category{
   height: 30px;
 }
@@ -106,4 +103,47 @@ body.home #front-service .front-service-inner .c_text .c_btn a {
 }
 #gnav ul li.current-menu-item a {
     background: #F3F3F3;
+}
+
+/*レスポンシブ*/
+@media screen and (max-width: 991px){
+  /*body.home .front-loop .popular_post_box .eyecatch {
+      width: 105px;
+      height: 100%;
+  }
+
+  .about-post .post-thumbnail{
+    width: 105px;
+  }*/
+  .eyecatch {
+    width: 30%;
+    height: auto;
+  }
+  body.home .front-loop .popular_post_box .wrap-a {
+    border: 0px;
+  }
+  .front-loop-cont {
+    width: 100%;
+  }
+  .detail-post{
+    width: 70%;
+    margin-left: 20px;
+  }
+  body.home .front-loop .popular_post_box h3 {
+    font-size: 70%;
+    font-weight: bold;
+    margin-bottom: 5px;
+    line-height: 1.5em;
+  }
+
+  body.home .front-loop .popular_post_box .p_category {
+      display: inline-block;
+      padding: 4px 12px;
+      font-size: 6px;
+  }
+  body.home .front-loop .popular_post_box .wrap-a h3{
+      margin-left: 0px;
+      margin-right: 0px;
+  }
+
 }
