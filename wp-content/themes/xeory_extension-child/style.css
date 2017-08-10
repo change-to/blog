@@ -117,6 +117,18 @@ body.home #front-service .front-service-inner .c_text .c_btn a {
     padding: 22px 0 0 0
 }
 
+.post-content h5 {
+    font-size: 30px;
+}
+
+
+
+
+
+
+
+
+
 /*レスポンシブ*/
 @media screen and (max-width: 991px){
   /*body.home .front-loop .popular_post_box .eyecatch {
