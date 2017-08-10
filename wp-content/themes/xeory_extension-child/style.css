@@ -75,8 +75,15 @@ body.home .front-loop .popular_post_box {
 #header.fixed {
    position: fixed;
 }
+.main-inner{
+  margin-top: 95px;
+}
 #main_visual{
   height: 100% !important;
+}
+
+#main{
+  background-color: #f3f3f3;
 }
 
 body.home .front-loop {
