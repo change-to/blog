@@ -121,7 +121,9 @@ body.home #front-service .front-service-inner .c_text .c_btn a {
     font-size: 30px;
 }
 
-
+a {
+  color: #e2a000;
+}
 
 
 
